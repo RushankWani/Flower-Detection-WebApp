@@ -59,7 +59,7 @@ def Test1(request):
 		])
 	
 		model = load_model(r"flower_detection\flower_api_model.h5")
-		validation_image = image.load_img(r"C:\Users\saniy\Downloads\WhatsApp Image 2022-01-30 at 8.27.49 PM.jpeg", target_size=(180,180))
+		validation_image = image.load_img(r"C:\Users\saniy\Downloads\tulip.jpg", target_size=(180,180))
 		validation_image = image.img_to_array(validation_image)
 		validation_image = np.expand_dims(validation_image,axis=0)
 		result = model.predict(validation_image)
