@@ -26,11 +26,20 @@ def test(request):
 def daisy(request):
 	return render(request, 'home/daisy.html')
 
-def yellow_rose(request):
-	return render(request, 'home/yellow_rose.html')
+def sunflower(request):
+	return render(request, 'home/sunflower.html')
 
-def pink_rose(request):
-	return render(request, 'home/pink_rose.html')
+def rose(request):
+	return render(request, 'home/rose.html')
+
+def tulip(request):
+	return render(request, 'home/tulip.html')
+
+def dandelion(request):
+	return render(request, 'home/dandelion.html')
+
+def lotus(request):
+	return render(request, 'home/lotus.html')
 
 def Test1(request):
 	def predict():
@@ -49,8 +58,8 @@ def Test1(request):
 		tf.keras.layers.Dense(num_classes)
 		])
 	
-		model = load_model(r"C:\Users\tkada\OneDrive\Documents\MIni Project\Django_Gui\flower_detection\flower_api_model.h5")
-		validation_image = image.load_img(r"C:\Users\tkada\OneDrive\Documents\MIni Project\Django_Gui\flower_detection\static\rose3.jpg", target_size=(180,180))
+		model = load_model(r"flower_detection\flower_api_model.h5")
+		validation_image = image.load_img(r"C:\Users\saniy\Downloads\WhatsApp Image 2022-01-30 at 8.27.49 PM.jpeg", target_size=(180,180))
 		validation_image = image.img_to_array(validation_image)
 		validation_image = np.expand_dims(validation_image,axis=0)
 		result = model.predict(validation_image)

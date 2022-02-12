@@ -5,8 +5,10 @@ urlpatterns = [
     path('upload/', views.upload , name='upload'),
     path('test/', views.test , name='test_home'),
     path('daisy/', views.daisy , name='daisy'),
-    path('yellow_rose/', views.yellow_rose , name='yellow_rose'),
-    path('pink_rose/', views.pink_rose , name='pink_rose'),
+    path('sunflower/', views.sunflower , name='sunflower'),
+    path('rose/', views.rose , name='rose'),
+    path('tulip/', views.tulip , name='tulip'),
+    path('dandelion/', views.dandelion , name='dandelion'),
+    path('lotus/', views.lotus , name='lotus'),
     path('Test1/', views.Test1 , name='Test1'),
-    
-]
+    ]
