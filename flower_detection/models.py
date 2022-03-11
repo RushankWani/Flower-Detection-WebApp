@@ -20,5 +20,5 @@ class Info(models.Model):
     symbolizes = models.TextField()
     season_to_grow = models.TextField()
     
-def __str__(self):
-    return self.flower_name 
+    def __str__(self):
+        return self.flower_name 
