@@ -22,3 +22,9 @@ class Info(models.Model):
     
     def __str__(self):
         return self.flower_name 
+
+class Uploaded_Image(models.Model):
+    uploaded_image = models.ImageField(blank=False, upload_to="User_uploaded_images/")
+
+    def filen(self):
+        path = self.image.path
